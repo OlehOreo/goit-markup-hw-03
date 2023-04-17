@@ -1,0 +1,183 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --accent-color: #404bbf;
+  --accent-text: #ffffff;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: #434455;
+  background-color: #ffffff;
+}
+.list {
+  list-style: none;
+}
+/* потім забарти текст соц.мереж і стилі .link a */
+.link,
+.link a {
+  text-decoration: none;
+}
+/*==========COMPONENTS========== */
+.text-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.subtitle {
+  font-weight: inherit;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+/* headings */
+.desc-headings {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+/* headings */
+
+/*==========/COMPONENTS========== */
+
+/*==========MENU ========== */
+/*==========Logo========== */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.logo-text {
+  color: #2e2f42;
+}
+/*==========/Logo========== */
+
+/*==========MENU LINK========== */
+.menu-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+/*==========/MENU LINK========== */
+
+/*==========ADDRESS========== */
+.address {
+  font-style: normal;
+}
+.address-contacts {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: currentColor;
+}
+.address-contacts:hover,
+.address-contacts:focus {
+  color: var(--accent-color);
+}
+
+/*==========/ADDRESS========== */
+
+/*==========HERO========== */
+
+.hero {
+  background-color: #2e2f42;
+}
+
+.modal-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  color: var(--accent-text);
+
+  background: #4d5ae5;
+
+  cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--accent-color);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+/*==========/HERO========== */
+
+/*==========  OUR TEAM========== */
+.desc {
+  background-color: #f4f4fd;
+}
+
+.desc-item {
+  background: #ffffff;
+}
+/*==========/OUR TEAM========== */
+
+/*==========BUTTOMS FILTER PORTFOLIO========== */
+.filter .filter-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  color: #4d5ae5;
+  background: #f4f4fd;
+}
+.filter-btn:active {
+  color: var(--accent-text);
+  background: var(--accent-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--accent-text);
+  background: var(--accent-color);
+}
+/*==========/BUTTOMS FILTER========== */
+
+/*==========FOOTER========== */
+.footer {
+  background-color: #2e2f42;
+}
+
+.logo-footer {
+  color: #f4f4fd;
+}
+
+.copyright {
+  color: #f4f4fd;
+}
