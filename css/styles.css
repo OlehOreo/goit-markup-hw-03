@@ -239,6 +239,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   height: 56px;
+  min-width: 169px;
   border: none;
   
   
@@ -268,7 +269,7 @@ img {
 
 /*==========FEATURES========== */
 .features {
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
 .features-list {
@@ -283,6 +284,10 @@ img {
 /*==========/FEATURES========== */
 
 /*==========WHAT ARE WE DOING========== */
+
+.description {
+padding-bottom: 120px;}
+
 .desc-list {
   display: flex;
   gap: 24px;
@@ -413,7 +418,7 @@ padding-bottom: 120px;}
   background-color: #2e2f42;
 }
 .logo-futer {
-  display: inline-block;
+display: inline-block;
 margin-bottom: 16px;
 }
 
