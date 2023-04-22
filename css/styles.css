@@ -11,13 +11,35 @@ body {
   background-color: #ffffff;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
-/* потім забарти текст соц.мереж і стилі .link a */
-.link,
-.link a {
+
+.link {
   text-decoration: none;
 }
+
+.page-header {
+  background-color: #ffffff;
+}
+/*==========RESET========== */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
 /*==========COMPONENTS========== */
 .text-content {
   font-weight: 400;
@@ -27,6 +49,8 @@ body {
   color: #434455;
 }
 .subtitle {
+  padding-bottom: 8px;
+
   font-weight: inherit;
   font-size: 20px;
   line-height: 1.2;
@@ -35,6 +59,8 @@ body {
 }
 /* headings */
 .desc-headings {
+  margin-bottom: 72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -43,13 +69,43 @@ body {
   text-transform: capitalize;
   color: #2e2f42;
 }
+
+/* .card-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+} */
+
 /* headings */
 
 /*==========/COMPONENTS========== */
 
+/* 3 home work */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1158px;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /*==========MENU ========== */
+.menu {
+  display: flex;
+}
+.menu .menu-item {
+}
+
+.menu .menu-item:not(:last-child) {
+  margin-right: 40px;
+}
 /*==========Logo========== */
 .logo {
+  margin-right: 76px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -65,11 +121,25 @@ body {
 }
 /*==========/Logo========== */
 
-/*==========MENU LINK========== */
+/*==========HEADER========== */
+
+.mein-nav {
+  display: flex;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e7e9fc;
+}
+
 .menu-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   color: #2e2f42;
 }
 .menu-link:hover,
@@ -79,10 +149,23 @@ body {
 /*==========/MENU LINK========== */
 
 /*==========ADDRESS========== */
+.address-items {
+  display: flex;
+}
+
+.address-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .address {
+  margin-left: auto;
+
   font-style: normal;
 }
 .address-contacts {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -99,17 +182,22 @@ body {
 /*==========HERO========== */
 
 .hero {
+  text-align: center;
   background-color: #2e2f42;
 }
 
 .modal-btn {
+  margin-bottom: 188px;
+  width: 169px;
+  height: 56px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   color: var(--accent-text);
 
@@ -123,36 +211,108 @@ body {
 }
 
 .hero-title {
+  max-width: 496px;
+  padding-top: 188px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 0px;
+  margin-bottom: 48px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   color: #ffffff;
 }
 
 /*==========/HERO========== */
 
+/*==========FEATURES========== */
+.features-cont {
+  padding-top: 120px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list .item {
+  width: 264px;
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 24px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*==========/FEATURES========== */
+
+/*==========WHAT ARE WE DOING========== */
+.desc-list {
+  display: flex;
+}
+.desc-list > .item {
+  flex-basis: calc((100%-48px) / 3);
+}
 /*==========  OUR TEAM========== */
+.team-items {
+  display: flex;
+  gap: 24px;
+}
+.team-item {
+  flex-basis: calc((100% - 72px) / 4);
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .desc {
   background-color: #f4f4fd;
 }
 
-.desc-item {
+.team-items .team-item {
   background: #ffffff;
 }
 /*==========/OUR TEAM========== */
 
-/*==========BUTTOMS FILTER PORTFOLIO========== */
+/*==========BUTTONS FILTER PORTFOLIO========== */
+
+.filter-position {
+  margin-top: 96px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 24px;
+}
+
 .filter .filter-btn {
+  padding: 12px 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+
   cursor: pointer;
 
   color: #4d5ae5;
@@ -164,12 +324,58 @@ body {
 }
 .filter-btn:hover,
 .filter-btn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
   color: var(--accent-text);
   background: var(--accent-color);
 }
-/*==========/BUTTOMS FILTER========== */
+/*==========/BUTTONS FILTER========== */
+
+/*==========PORTFOLIO========== */
+.portfolio-items {
+  margin-top: 72px;
+  margin-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-cont {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.card-team {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-align: center;
+}
+
+.card-portfolio {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+
+  border-color: #e7e9fc;
+}
 
 /*==========FOOTER========== */
+.footer-desc {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .footer {
   background-color: #2e2f42;
 }
@@ -179,5 +385,6 @@ body {
 }
 
 .copyright {
+  width: 264px;
   color: #f4f4fd;
 }
